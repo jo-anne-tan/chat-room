@@ -1,0 +1,44 @@
+[x] 1. An area to display all the conversations sent by everyone
+[x] 2. An area that lists out all the online users
+[x] 3. A form that allows user to type message and press send
+[x]     Note: For this chat app, username is automatically generated for each user
+
+
+
+Form Validation:
+[x] 1.    Do not allow users to submit form if there is no text input
+[x] 2.    After triggering sendMessage, the existing text input should be cleared
+[x] 3.    Do not allow users to type more than 500 characters. Show error message when that happens.
+[o] 4.    Think about Facebook Messenger, Whatsapp, etc, add any form validation that you can think of.
+
+
+
+[x] 1. Display conversations
+    Render each message nicely along with its username. Remember to handle the case when conversations is an empty array.
+
+[x] 2. sendMessage should populate conversations state
+    When sendMessage is called, get username and messages and push them into conversations array.
+
+    Notice how the conversation window won't display the latest chat messages once it overflows? Fix that!
+
+[x] 4. User Avatar
+    Make your chat more lively by generating a profile image for each user. Adorable Avatar API is really fun and easy to use:
+    Simply call https://api.adorable.io/avatars/150/${username}.png where every username will give you a different image.
+    The value 150 represents 150px x 150px resolution.
+
+Nice to haves:
+[x] Highlight currentUser
+[ ] Auto scroll down to latest message
+
+
+    
+
+    Events that you can emit
+    [x] NEW_USER
+        BROADCAST_MESSAGE
+
+    Events that you can listen
+    [x] GET_CURRENT_USER
+    [x] UPDATE_USER_LIST
+    [x] RECEIVE_BROADCAST
+    [x] HAS_ERROR
